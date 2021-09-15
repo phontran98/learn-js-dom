@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main {
+  max-width: 300px;
+  margin: 50px;
+}
+.wrapper-select {
+  position: relative;
+}
+.wrapper-select.open > .list-options {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.selected {
+  padding: 10px;
+  background-color: #ccc;
+}
+.list-options {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+.list-options > li {
+  padding: 10px 0;
+}
+
+#select-box {
+  margin-top: 200px;
+}
